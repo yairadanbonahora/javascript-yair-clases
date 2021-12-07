@@ -152,29 +152,41 @@
 
 // //QUINTA CLASE- OBJETOS
 //función para crear usuarios
-class CrearUsuario {
-    constructor (nombre, localidad, mail){
-        this.nombre = nombre;
-        this.localidad = localidad;
-        this.pais = "Argentina";
-        this.mail = mail;
-    }
+// class CrearUsuario {
+//     constructor (nombre, localidad, mail){
+//         this.nombre = nombre;
+//         this.localidad = localidad;
+//         this.pais = "Argentina";
+//         this.mail = mail;
+//     }
 
-    //función para hablar
-    hablar () {
-        console.log ("Hola soy " + this.nombre + ", vivo en " + this.localidad + ". Mi mail es: " + this.mail);
-    }
-}
+//     //función para hablar
+//     hablar () {
+//         console.log ("Hola soy " + this.nombre + ", vivo en " + this.localidad + ". Mi mail es: " + this.mail);
+//     }
+// }
 
-//para pedir los datos del usuario 1
-const nombre = prompt ("Ingrese nombre de usuario");
-const localidad = prompt ("Ingrese su localidad");
-const mail = prompt ("Ingrese su mail");
+// //para pedir los datos del usuario 1
+// const nombre = prompt ("Ingrese nombre de usuario");
+// const localidad = prompt ("Ingrese su localidad");
+// const mail = prompt ("Ingrese su mail");
 
-const usuario1 = new CrearUsuario (nombre, localidad, mail);
-const usuario2 = new CrearUsuario ("Claudio", "La Plata", "claudio@gmail");
-const usuario3 = new CrearUsuario ("Sandra", "Junin", "sandra@gmail");
+// const usuario1 = new CrearUsuario (nombre, localidad, mail);
+// const usuario2 = new CrearUsuario ("Claudio", "La Plata", "claudio@gmail");
+// const usuario3 = new CrearUsuario ("Sandra", "Junin", "sandra@gmail");
 
-usuario1.hablar ();
-console.log (usuario2);
-console.log (usuario3); 
+// usuario1.hablar ();
+// console.log (usuario2);
+// console.log (usuario3); 
+
+// SEXTA CLASE- ARRAYS
+// Entregable
+//para crear array de máquinas
+let maquinas = ["cortadora de chapas", "plegadora", "balancin"];
+console.log (maquinas.join ("\n"));
+
+//para agregar elementos al array ya creado
+let maquinasAgregarALista = ["agujereadora de banco", "cortadora de fierros"];
+let ListadoCompleto = maquinas.concat (maquinasAgregarALista);
+console.log (ListadoCompleto.join ("\n"));
+
